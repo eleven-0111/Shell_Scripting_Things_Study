@@ -1,0 +1,53 @@
+ftp://ip_addr
+
+
+How bash process the script 
+1. Tokenization
+2. Command Identification
+3. Shell Expansions
+4. Quote Removal
+5. Redirection
+
+Later, it will execute the script
+
+Types od Quoting 
+\  -  BackSlash
+`  -  Backtick
+"" -  Double Quotes
+'' - Single Quotes
+
+
+1. Tokenisation
+-> Meta Characters
+|, &, ;, (), <>, Space, Tab, NewLine
+
+Two Types of Operators
+-> Control Operators
+-> Reditreaction Operators   "Only matters if they are Unquoted"
+
+
+echo $name > out.txt  (Spaces are meta_charaters and > is a meta_charater)
+echo $name > out.txt  (echo, $name, out.txt)[Words and Operators] (> Operator)
+
+
+
+2. Command Identification
+
+-> Simple Commands
+-> Compund Commands
+
+3. Expansions
+
+-> Brace Expansion (Stage 1)
+-> Parameter Expansion, Arthimetic Expansion, Command Expansion, Tilde Expansion (Stage 2)
+-> Word Splitting (Stage 3)
+-> Globbing (Stage 5)
+
+-> Word Spliting
+split a unquoted expansions into different words
+-> Word Spliting is only performed on the results of unquoted:
+. Parameter Expansions
+. Command Expansions
+. Arthimetic Expansions
+
+Spliting of Characters governed by IFS(Internal Field Sperator) variable
