@@ -1,0 +1,21 @@
+Git Init - initialize an existing directory as a Git repository
+
+Git Add [file] - add a file as it looks now to your next commit (stage)
+
+Git Commit -m “[descriptive message]” - commit your staged content as a new commit snapshot
+
+Git Branch - list your branches. a * will appear next to the currently active branch
+
+Git Branch [branch-name] - create a new branch at the current commit
+
+Git Checkout - switch to another branch and check it out into your working directory (Switch will also work)
+
+Git Merge [branch] - merge the specified branch’s history into the current one
+
+Git Log - show all commits in the current branch’s history
+
+Git Clone [url] - retrieve an entire repository from a hosted location via URL
+
+Git Remote Add [alias] [url] - add a git URL as an alias
+
+Git Push [alias] [branch] - Transmit local branch commits to the remote repository branch "git push -u origin master_name"
