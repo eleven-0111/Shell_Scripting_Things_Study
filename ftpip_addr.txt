@@ -6,7 +6,7 @@ How bash process the script
 2. Command Identification
 3. Shell Expansions
 4. Quote Removal
-5. Redirection
+5. Redirection 
 
 Later, it will execute the script
 
@@ -51,3 +51,9 @@ split a unquoted expansions into different words
 . Arthimetic Expansions
 
 Spliting of Characters governed by IFS(Internal Field Sperator) variable
+
+-> Globbing
+Special characters *, ?, [].
+
+-> Quoting
+3 Types of Quotes \, '', "".
